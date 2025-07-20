@@ -23,15 +23,16 @@
       overflow: hidden;
     }
 
-    .hero-img {
+    .hero-img, .promo-img {
       width: 100%;
       display: block;
     }
 
-    .promo-img {
+    video {
       width: 100%;
+      max-height: 280px;
       display: block;
-      margin-top: -10px;
+      object-fit: cover;
     }
 
     .product-grid {
@@ -73,8 +74,8 @@
       color: white;
       font-size: 17px;
       padding: 14px 24px;
-      border-radius: 8px;
-      margin-bottom: 30px;
+      border-radius: 10px;
+      margin: 20px auto 30px;
       text-decoration: none;
       transition: background 0.3s ease;
     }
@@ -92,8 +93,14 @@
 </head>
 <body>
   <div class="container">
-    <img src="https://cnfans.center/ALLCAT.jpg" class="hero-img" alt="Header Image" />
-    <img src="https://cnfans.center/AF16USD.png" class="promo-img" alt="Price Promo" />
+    <img src="https://cnfans.center/ALLCAT.jpg" class="hero-img" alt="Main Product Banner" />
+
+    <video controls muted autoplay playsinline loop>
+      <source src="https://cnfans.center/af1factory.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <img src="https://cnfans.center/AF16USD.png" class="promo-img" alt="Promo Price" />
 
     <div class="product-grid">
       <img src="https://cnfans.center/9beb9c6f-86bb-4f4a-8098-3ee611303c29.png" alt="Buyer Show 1" />
