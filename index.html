@@ -15,7 +15,7 @@
     }
 
     .container {
-      max-width: 500px;
+      max-width: 520px;
       margin: 0 auto;
       background: #ffffff;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -23,34 +23,14 @@
       overflow: hidden;
     }
 
-    .hero-img, .promo-img {
+    .hero-img {
       width: 100%;
       display: block;
-    }
-
-    video {
-      width: 100%;
-      max-height: 280px;
-      display: block;
-      object-fit: cover;
-    }
-
-    .product-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      padding: 10px;
-      justify-content: center;
-    }
-
-    .product-grid img {
-      width: 48%;
-      border-radius: 8px;
     }
 
     h1 {
       font-size: 20px;
-      margin: 16px 12px 10px;
+      margin: 20px 16px 10px;
       color: #222;
     }
 
@@ -58,7 +38,7 @@
       text-align: left;
       font-size: 15px;
       color: #444;
-      margin: 0 auto 20px;
+      margin: 0 auto 24px;
       padding: 0 24px;
       line-height: 1.6;
     }
@@ -68,20 +48,47 @@
       font-weight: bold;
     }
 
+    .cta-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
     .cta-btn {
       display: inline-block;
       background-color: #25D366;
       color: white;
       font-size: 17px;
-      padding: 14px 24px;
+      padding: 14px 28px;
       border-radius: 10px;
-      margin: 20px auto 30px;
       text-decoration: none;
+      width: 85%;
+      max-width: 320px;
       transition: background 0.3s ease;
     }
 
     .cta-btn:hover {
       background-color: #1ea64f;
+    }
+
+    .catalog-btn {
+      background-color: #007bff;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 16px 24px;
+      justify-content: center;
+    }
+
+    .product-grid img {
+      width: 47%;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
     @media (max-width: 480px) {
@@ -93,31 +100,36 @@
 </head>
 <body>
   <div class="container">
-    <h1>🔥 Welcome to the world of exclusive luxury — unlock your private deal Today!</h1>
+
+    <!-- 顶部主视觉图 -->
     <img src="https://cnfans.center/9beb9c6f-86bb-4f4a-8098-3ee611303c29.png" class="hero-img" alt="Main Product Banner" />
- 
+
+    <!-- 标题与引导文案 -->
     <h1>🔥 New Private Video Shopping Group Just Launched!</h1>
     <div class="features">
       ✅ <span>VIP deals</span>, hot drops & <span>real product videos</span> updated daily<br />
       💬 Order directly in WhatsApp — <span>super convenient</span><br />
       🚪 Tap to join while it’s still open!
     </div>
-    
-    <a class="cta-btn" href="https://chat.whatsapp.com/BEoGM3BcL9pHzNYmpJXiYK" target="_blank">
-      👉 Join Now on WhatsApp
-    </a>
-    <a class="cta-btn" href="https://cnfans.cn.com/spreadsheet" target="_blank">
-      👉Click View Our Catalog
-    </a>
+
+    <!-- 按钮组 -->
+    <div class="cta-group">
+      <a class="cta-btn" href="https://chat.whatsapp.com/BEoGM3BcL9pHzNYmpJXiYK" target="_blank">
+        👉 Join Now on WhatsApp
+      </a>
+      <a class="cta-btn catalog-btn" href="https://cnfans.cn.com/spreadsheet" target="_blank">
+        📄 View Full Catalog
+      </a>
+    </div>
+
+    <!-- 买家晒单图 -->
     <div class="product-grid">
       <img src="https://cnfans.center/1.png" alt="Buyer Show 1" />
       <img src="https://cnfans.center/2.png" alt="Buyer Show 2" />
-    </div>
-    <div class="product-grid">
       <img src="https://cnfans.center/3.png" alt="Buyer Show 3" />
       <img src="https://cnfans.center/4.png" alt="Buyer Show 4" />
     </div>
-    </div>
+
   </div>
 </body>
 </html>
